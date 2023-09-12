@@ -1,5 +1,9 @@
 package mascot
 
-func BestMascot() string {
+func SecondBestMascot() string {
 	return "Tux"
+}
+
+func BestMascot() string {
+	return "Go Gopher"
 }
