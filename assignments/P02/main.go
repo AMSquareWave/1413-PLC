@@ -1,7 +1,11 @@
 package main
 
-import imageManipulator "github.com/AMSquareWave/4143-PLC/assignments/P02/imagemod/imageManipulator"
+import imageManipulator "imagemod/imageManipulator"
 
 func main() {
 	im := imageManipulator.NewImageManipulator(800, 600)
+
+	im.DrawRectangle(420, 69, 42, 42)
+
+	im.SaveToFile("silly-little-image.png")
 }
