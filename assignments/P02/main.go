@@ -1,16 +1,7 @@
 package main
 
-import "fmt"
+import imageManipulator "github.com/AMSquareWave/4143-PLC/assignments/P02/imagemod/imageManipulator"
 
 func main() {
-	var counter int = 50
-
-	for counter > 0 {
-		fmt.Println(counter)
-		if counter%2 == 0 {
-			counter += 1
-		} else {
-			counter -= 3
-		}
-	}
+	im := imageManipulator.NewImageManipulator(800, 600)
 }
