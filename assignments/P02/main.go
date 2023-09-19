@@ -1,6 +1,6 @@
 package main
 
-import imageManipulator "imagemod/imageManipulator"
+import "P02/imagemod/imageManipulator"
 
 func main() {
 	im := imageManipulator.NewImageManipulator(800, 600)
