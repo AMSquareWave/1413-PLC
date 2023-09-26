@@ -5,12 +5,22 @@ import (
 )
 
 type ImageManipulator struct {
-	Image *gg.Context
+	Image     *gg.Context
+	ImagePath string
 }
 
 func NewImageManipulator(width int, height int) *ImageManipulator {
 	img := gg.NewContext(width, height)
 	return &ImageManipulator{Image: img}
+}
+
+func NewImageManipulatorWithImage(imgPath string) (*ImageManipulator, error) {
+	img, err := gg.LoadImage(imgPath)
+	if err != nil {
+		return nil, err
+	}
+	contxt := gg.NewContextForImage(img)
+	return &ImageManipulator{Image: contxt, ImagePath: imgPath}, nil
 }
 
 func (im *ImageManipulator) SaveToFile(filename string) error {
