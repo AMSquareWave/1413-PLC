@@ -5,7 +5,7 @@
 - [Hello: Hello "World" program](./assignments/Hello/)
 - [P01: "First" program](./assignments/P01)
 - [P02: Image Manipulation](./assignments/P02)
-- [P03: ASCII Art Generator](./assignments/P03)
+- [P03: Image Module](https://github.com/AMSquareWave/imgmod)
 
 There's not much else yet, so here's one paragraph of Lorem Ipsum as placeholder.
 
